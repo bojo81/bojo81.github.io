@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octopus</title>
+</head>
+<body>
+    <header>
+        <h1>Octopus IT</h1>  
+        <h2>Minden ami IT</h2>
+         <img src="./Images/Octopus.png" alt="octopus">
+         <a href="#kapcsolat">Kapcsolat</a>
+    </header>
+    <main>
+        
+        <h2>Szolgáltatásaink</h2>
+        <section>
+            <h3>Frontend webfejlesztés</h3>
+            <a target="_blank" href="frontend.html">Frontend</a>
+            <img src="./Images/Fronte.logo.jpg" alt="frontend_logo">
+        </section>
+        <section>
+            <h3>Backend szerver oldali programozás</h3>
+            <a target="_blank" href="backend.html">Backend</a>
+            <img src="./Images/backend.logo.jpg" alt="backend_logo">
+        </section>
+        <section>
+            <h3>Szerver üzemeltetés, egyéb informatikai szolgáltatás</h3>
+            <a target="_blank" href="it.html">IT</a>
+            <img src="./Images/halozatok-logo.jpg" alt="halozatok_logo">
+        </section>
+        <section>
+            <h3>Írjon nekünk...</h3>
+            <form action="https://formspree.io/f/mdobegrj" method="post" >
+                <label for="knev_id">Keresztnév: </label>
+                <input type="text" name="k_nev" placeholder="Gipsz" id="knev_id">
+                <br>
+                <label for="vnev_id">Vezetéknév: </label>
+                <input type="text" name="v_nev" placeholder="Jakab" id="vnev_id">
+                <br>
+                <label for="tel_id">Telefonszám: </label>
+                <input type="tel" name="tel" id="tel_id" placeholder="06-70-1234567" pattern="[0-9]{2}-[0-9]{2}-[0-9]{7}">
+                <br>
+                <label for="email_id">Email: </label>
+                <input type="email" name="email" placeholder="@" id="email_id">
+                <br>
+                <textarea name="uzenet" id="" cols="30" rows="10" placeholder="Ide írd be az üzeneted..."></textarea>
+                <br>
+                <label> 
+                    <input type="checkbox" name="is_surgos" />
+                    Az üzenet sürgős!
+                </label>
+                <br>
+                <button type="submit">Beküldés</button>
+            </form>
+        </section>
+        <section>
+            <h3>És aki mindezért felel...</h3>
+            <a target="_blank" href="personalCV.html">Borbás József</a>
+            <br>
+            <label for="kapcsolat" id="kapcsolat">Tel: 70/5807207</label>
+            <br>
+            <label for="kapcsolat" >Email:borbas.kft@gmail.com</label>
+
+
+        </section>
+    </main>
+    <footer>
+       &copy; B&B KFT  "Ha problémája van, mondja el nekünk, ha meg van elégedve mondja el MINDENKINEK!"
+    </footer>
+</body>
+</html>
