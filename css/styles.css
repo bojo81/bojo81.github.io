@@ -1,7 +1,45 @@
-h1 {
-    color: black;
+header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 body {
     background-color: rgb(230, 220, 226);
 }
+
+.photo-me {
+    display: inline;
+    border-radius: 50%;
+    border: 1px solid black;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+section div {
+    width: 300px;
+    margin: 10px;
+    line-height: 20px;
+    box-shadow: 3px 3px 5px black;
+} 
+.elso {
+    align-content: center;
+
+}
+
+.masodik {
+    
+}
+
+footer {
+    text-align: center;
+}
+
+
