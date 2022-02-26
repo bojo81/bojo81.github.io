@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OctopusIT</title>
+    <link rel="shortcut icon" href="Images/Octopus.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
 <body>
     <header>
         <h1>Octopus IT</h1>  
         <h2>Minden ami IT</h2>
-         <img src="./Images/Octopus.png" alt="octopus">
          <a href="#kapcsolat">Kapcsolat</a>
     </header>
     <main>
         <h2>Szolgáltatásaink</h2>
-        <section>
-            <h3>Frontend webfejlesztés</h3>
-            <a target="_blank" href="frontend.html">Frontend</a>
-            <img src="./Images/Fronte.logo.jpg" alt="frontend_logo">
-        </section>
-        <section>
-            <h3>Backend szerver oldali programozás</h3>
-            <a target="_blank" href="backend.html">Backend</a>
-            <img src="./Images/backend.logo.jpg" alt="backend_logo">
-        </section>
-        <section>
-            <h3>Szerver üzemeltetés, egyéb informatikai szolgáltatás</h3>
-            <a target="_blank" href="it.html">IT</a>
-            <img src="./Images/halozatok-logo.jpg" alt="halozatok_logo">
-        </section>
+        <nav>
+            <section class="carousel">
+                <div class="frontend-kep">
+                    <h3>Frontend webfejlesztés</h3>
+                    <a target="_blank" href="frontend.html">Frontend</a>
+                    <img src="./Images/Fronte.logo.jpg" alt="frontend_logo">
+                </div>
+                <div class="backend-kep">
+                    <h3>Backend szerver oldali programozás</h3>
+                    <a target="_blank" href="backend.html">Backend</a>
+                    <img src="./Images/backend.logo.jpg" alt="backend_logo">
+                </div>
+                <div class="it-kep">
+                    <h3>Szerver üzemeltetés, egyéb informatikai szolgáltatás</h3>
+                    <a target="_blank" href="it.html">IT</a>
+                    <img src="./Images/halozatok-logo.jpg" alt="halozatok_logo">
+                </div>
+             </section>
+         </nav>
         <section>
             <h3>Írjon nekünk...</h3>
             <form action="https://formspree.io/f/mdobegrj" method="post" >
@@ -51,14 +56,14 @@
                 <button type="submit">Beküldés</button>
             </form>
         </section>
-        <section>
+        <div>
             <h3>És aki mindezért felel...</h3>
             <a target="_blank" href="index.html">Borbás József</a>
             <br>
             <label for="kapcsolat" id="kapcsolat">Tel: 70/5807207</label>
             <br>
             <label for="kapcsolat" >Email:borbas.kft@gmail.com</label>
-        </section>
+        </div>
     </main>
     <footer>
        &copy; B&B KFT  "Ha problémája van, mondja el nekünk, ha meg van elégedve mondja el MINDENKINEK!"
