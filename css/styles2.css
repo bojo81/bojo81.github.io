@@ -11,12 +11,8 @@ html {
 
 header {
     background-color: rgb(174, 230, 211);
-    background-image: url(/Images/Octopus.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position-x: center;
     background-size: 400px;
-    padding: 50px;
+
 }
 
 h1 {
@@ -24,12 +20,27 @@ h1 {
     text-align: center;
     text-justify: auto;
     font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.octopus {
+    
 }
 
 h2 {
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
     background-color: #d5f1e8;
+}
+
+a:hover {
+    color: rgb(121, 122, 35);
+}
+
+main nav div {
+    display: flex;
+    flex-wrap: wrap;
 }
