@@ -10,9 +10,13 @@ html {
 }
 
 header {
-    background-color: rgb(174, 230, 211);
-    background-size: 400px;
+    background-color: white;
+}
 
+.octopus {
+    opacity: 0.2;
+    width: 100px;
+    height: 80px;
 }
 
 h1 {
@@ -23,19 +27,10 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.octopus {
-    
-}
-
 h2 {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-body {
-    background-color: #d5f1e8;
-}
-
 a:hover {
     color: rgb(121, 122, 35);
 }
@@ -43,4 +38,9 @@ a:hover {
 main nav div {
     display: flex;
     flex-wrap: wrap;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
 }
