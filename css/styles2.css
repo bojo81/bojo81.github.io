@@ -34,10 +34,10 @@ header {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     text-align: center;
     text-decoration: none;
-    color: rgb(16, 43, 43);
+    color: black;
 }
 
 .octopus {
@@ -64,5 +64,59 @@ h1 {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     color: black;
 }
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 80px;
+}
+
+.carousel {
+    height: 500px;
+    
+}
+
+.carousel-kep {
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.frontend-kep {
+    background-image: url(/Images/frontend.logo.jfif);
+}
+
+.backend-kep {
+    background-image: url(/Images/backend.jpg);
+}
+
+.carousel-title {
+    color: rgb(56, 22, 22);
+    font-size: 2.2rem;
+    padding-top: 18rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.title-2 {
+    color:rgb(151, 108, 108);
+    padding-top: 1rem;
+}
+
+.it-kep {
+    background-image: url(/Images/it.jfif);
+}
+
+.frontend {
+    display: flex;
+    margin: 3rem;
+    align-items: center;
+}
+
+.front-card {
+    margin: 2rem;
+}
+
+
+
 
 /* Media query */
