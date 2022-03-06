@@ -1,14 +1,32 @@
-
-
 header {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: antiquewhite;
+    background-color: rgb(235, 215, 227);
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+.tarolo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    
 }
 
 body {
     background-color: rgb(230, 220, 226);
 }
+ .contact {
+     justify-self: center;
+    justify-items: start;
+     margin: 20px;
+ }
+
+ .tanulmanyok {
+    justify-self: center;
+    justify-items: start;
+     margin: 20px;
+ }
 
 .photo-me {
     display: inline;
@@ -18,31 +36,11 @@ body {
     max-height: 250px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-section div {
-    width: 300px;
-    margin: 10px;
-    line-height: 20px;
-    box-shadow: 3px 3px 5px black;
-} 
-.elso {
-    align-content: center;
-
-}
-
-.masodik {
-    
-}
-
 footer {
     background-color: beige;
     text-align: center;
+    margin: 20px;
+    pad: 10px;
 }
 
 
