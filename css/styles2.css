@@ -40,6 +40,10 @@ h1 {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .octopus {
     opacity: 0.2;
     align-items: center;

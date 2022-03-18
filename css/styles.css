@@ -1,11 +1,33 @@
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(235, 215, 227);
-    height: 100px;
+    height: 200px;
     padding: 10px;
     margin: 10px;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.octopus {
+    opacity: 0.2;
+    align-items: left;
+    border-radius: 4rem;
+    width: 150px;
+}
+
+.octopus:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    opacity: 0.4;
+}
+
 .tarolo {
     display: grid;
     grid-template-columns: auto auto;
