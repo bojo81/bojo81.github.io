@@ -21,6 +21,7 @@
                 <li><a href="oct.html">Home</a></li>
                 <li><a href="#tapasztalat">Tapasztalat</a></li>
                 <li><a href="#portfolio">Portfólió</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
             </ul>
         </nav>
         <div class="tagline">
@@ -106,14 +107,30 @@
                 </div>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <h2>Írjon nekünk...</h3>
+            <form action="https://formspree.io/f/mdobegrj" method="post" class="contact-form">
+                <label for="knev_id">Keresztnév: </label>
+                <input type="text" name="k_nev" placeholder="Jakab" id="knev_id" class="contact-form__input">
+                <label for="vnev_id">Vezetéknév: </label>
+                <input type="text" name="v_nev" placeholder="Gipsz" id="vnev_id" class="contact-form__input">
+                <label for="tel_id">Telefonszám: </label>
+                <input type="tel" name="tel" id="tel_id" placeholder="06-70-1234567" pattern="[0-9]{2}-[0-9]{2}-[0-9]{7}" class="contact-form__input">
+                <label for="email_id">Email: </label>
+                <input type="email" name="email" placeholder="@" id="email_id" class="contact-form__input">
+                <textarea name="uzenet" id="" cols="30" rows="10" placeholder="Írja be az üzenetét..." class="contact-form__input"></textarea>
+                <button type="submit" class="btn contact-form__submit">Beküldés</button>
+            </form>
+        </section>
     </main>
     <footer>
         <ul class="footer-links">
             <li><a href="oct.html">Home</a></li>
             <li><a href="#tapasztalat">Tapasztalat</a></li>
             <li><a href="#portfolio">Portfólió</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
         </ul>
-        Copyright &copy; 2022 Ocotpus IT "Minden ami IT"
+        Copyright &copy; 2022 <strong>Octopus IT</strong>  "Minden ami IT"
     </footer>
 </body>
 </html>

@@ -32,6 +32,17 @@ body {
     margin: 0.5rem 0;
 }
 
+/* All sections */
+
+section {
+    max-width: var(--main-page-max-width);
+    margin: 0 auto;
+}
+
+section h2 {
+    margin: 2rem 0 1rem;
+}
+
 /* Header stílusok*/
 header {
     font-size: 2rem;
@@ -41,6 +52,11 @@ header {
     background-position: center, bottom;
     min-width: var(--main-page-max-width);
     padding-top: 2rem;
+    position: relative;
+}
+
+.logo {
+    font-size: 3rem;
 }
 
 h1 {
@@ -48,6 +64,19 @@ h1 {
     font-weight: 200;
     letter-spacing: 1px;
     word-spacing: 4px;
+}
+
+.header-nav {
+    max-width: var(--main-page-max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+
 }
 
 .nav-links a {
@@ -75,6 +104,14 @@ h1 {
     margin: 0.5rem;
 }
 
+.tagline {
+    width: var(--main-page-max-width);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .btn.btn-full {
     color: var(--main-font-color);
     background-color: var(--main-input-color);
@@ -86,6 +123,22 @@ h1 {
     color: var(--main-font-color);
     box-shadow: 2px 2px 6px rgba(106, 54, 158, 0.9);
     transition: background-color 0.25s, border 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+/* Tapasztalat stílusok */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    display: flex;
+    width: 270px;
+    margin: 0.5rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Project-list stílusok */
@@ -103,4 +156,65 @@ h1 {
 
 .project-img {
     width: 100%;
+}
+
+/* Form stílusok */
+
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(../Images/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 100px 100px black inset;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form__input {
+    border: none;
+    background: none;
+    color: var(--main-input-color);
+    border-bottom: 2px solid var(--main-input-color);
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+textarea.contact-form__input {
+    border: 2px solid var(--main-input-color);
+    height: 225px;
+    overflow: hidden;
+}
+
+.contact-form__submit {
+    background: none;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+/* Lábléc stylusok */
+
+footer {
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: var(--main-font-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer-links a:hover {
+    color: var(--main-font-hover-color);
 }
