@@ -1,0 +1,161 @@
+/* Css Reset*/
+
+:root {
+    --dark-background-font-color: rgb(229, 229, 248); 
+    --light-background-font-color: rgb(25, 25, 25);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--dark-background-font-color);
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Általános stílusok */
+body {
+    min-width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+/* Header */
+
+.page-header {
+    background: rgb(36,24,0);
+    background: linear-gradient(180deg, rgba(207, 189, 156, 0.827) 0%, rgb(87, 77, 56) 100%);
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+}
+
+.page-heading-1 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-menu-item {
+    margin: 1rem 2rem;
+}
+
+/* Main banner */
+.main-banner {
+    background-image: linear-gradient(0deg, rgba(207, 189, 156, 0.427) 0%, rgb(87, 77, 56, 0.35) 100%),url(./images/bookstore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+    color: black;
+}
+
+.main-banner-contant-container {
+    width: 50%;
+    margin-left: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-heading {
+    margin: 1rem;
+    font-weight: 300;
+}
+
+.banner-p {
+    margin: 0.25rem;
+    font-size: 1.5rem;
+}
+
+
+/* Products */
+.products-container {
+    color: var(--light-background-font-color);
+}
+
+.page-heading-2 {
+    margin: 2rem;    
+}
+
+.cta-button {
+    margin: 1.75rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 8px white;
+    cursor: pointer;
+    background-color: rgb(156, 28, 28);
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.cta-button:hover {
+    background-color: rgb(221, 55, 55);
+    box-shadow: 3px 3px 8px rgb(224, 213, 213);
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--light-background-font-color)
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+
+.book-img {
+    width: 150px;
+}
+
+.book-link {
+    width: 150px;
+}
+
+@media screen and (min-width: 850px) {
+    /* Header */
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-heading-1 {
+        margin-bottom: 1rem;
+    }
+
+    .header-menu-item {
+    margin: 1.25rem;
+    }
+}
