@@ -15,28 +15,34 @@ html {
 body {
     background-color: var(--backgound-primary);
 }
-/* Komponensek */ 
-
-header {
-    background-color: rgb(181, 233, 233);
-}
+/* Header stílus */ 
 
 .header-container {
+    background-color: rgb(205, 228, 228);
+    display: flex;
+}
+
+.header-nav-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 2rem 1.5rem;
+}
+
+.header-h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu {
     display: flex;
     list-style-type: none;
-    align-items: center;
+    align-items: flex-end;
 }
 
 h1 {
-    font-size: 5.5rem;
-    text-align: center;
-    text-decoration: none;
+    font-size: 3.0rem;
     color: black;
 }
 
@@ -48,6 +54,7 @@ a {
     opacity: 0.2;
     align-items: center;
     border-radius: 4rem;
+    margin: 20px;
     
 }
 
@@ -68,6 +75,8 @@ a {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     color: black;
 }
+
+/* main stílusok */
 h2 {
     text-align: center;
     font-size: 3rem;
