@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/stylesOct.css">
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container">  
         <nav class="header-nav-container">
             <div class="header-h1">
-                <h1>Octopus IT</h1>  
+                <h1>Octopus IT</h1>
                 <a href="oct.html"><img class="octopus" src="./Images/Octopus.jpg" alt="octopus_logo"></a>
             </div>
             <ul class="header-menu">
@@ -25,7 +25,7 @@
          </nav>
     </header>
     <main>
-        <h2 class="foresz">Szolgáltatásaink</h2>
+        <h2 class="main-h2">Szolgáltatásaink</h2>
             <section class="carousel">
                 <div class="carousel-kep frontend-kep">
                     <h3 class="carousel-title">Frontend webfejlesztés, igényes-letisztult weboldalak</h3>
@@ -38,28 +38,21 @@
                 </div>
              </section>
              <section class="szolgaltatas">
+                <h2>Frontend webfejlesztés</h2>
                 <div class="frontend">
-                   <h2>Frontend webfejlesztés</h2>
-                    <h3 class="html-title">HTML</h3>
                     <img class="front-card" src="./Images/HTML.logo.png" width="300" alt="html_logo">
-                    <h3 class="css-title">CSS</h3>
                     <img class="front-card" src="./Images/css.logo.jpg" width="150" alt="css_logo">
-                    <h3 class="script-title">JAVASCRIPT</h3>
                     <img class="front-card" src="./Images/JS.logo.png" alt="js_logo">
                 </div>
+                <h2>Szerver oldali programozás</h2>
                 <div class="backend">
-                   <h2>Backend, szerver oldali programozás</h2>
-                    <h3>Python</h3>
                     <img class="back-card" src="./Images/python.logo.png" width="200" alt="python_logo">
-                    <h3>Java</h3>
                     <img class="back-card" src="./Images/java.logo.png" alt="java_logo">
-                    <h3>PHP</h3>
                     <img class="back-card" src="./Images/php.logo.png" alt="php_logo">
-                    <h3>SQL</h3>
-                    <img src="./Images/sql.logo.png" alt="">
+                    <img class="back-card" src="./Images/sql.logo.png" alt="sql_logo">
                 </div>
+                <h2>IT</h2>
                 <div class="it">
-                   <h2>IT</h2>
                     <h3>Számítógép hálózat építés</h3>
                     <img class="it-card" src="./Images/halozatok-logo.jpg" alt="halozat_logo">
                     <h3>Szerver üzemeltetés</h3>
@@ -70,23 +63,17 @@
            </section>    
         <section class="contact">
             <h3>Írjon nekünk...</h3>
-            <form action="https://formspree.io/f/mdobegrj" method="post" >
+            <form class="contact-form" action="https://formspree.io/f/mdobegrj" method="post" >
                 <label for="knev_id">Keresztnév: </label>
                 <input type="text" name="k_nev" placeholder="Gipsz" id="knev_id">
-                <br>
                 <label for="vnev_id">Vezetéknév: </label>
                 <input type="text" name="v_nev" placeholder="Jakab" id="vnev_id">
-                <br>
                 <label for="tel_id">Telefonszám: </label>
                 <input type="tel" name="tel" id="tel_id" placeholder="06-70-1234567" pattern="[0-9]{2}-[0-9]{2}-[0-9]{7}">
-                <br>
                 <label for="email_id">Email: </label>
                 <input type="email" name="email" placeholder="@" id="email_id">
-                <br>
-                <textarea name="uzenet" id="" cols="30" rows="10" placeholder="Ide írd be az üzeneted..."></textarea>
-                <br>
-                <br>
-                <button type="submit">Beküldés</button>
+                <textarea class="contact-textarea" name="uzenet" id="" cols="30" rows="10" placeholder="Ide írd be az üzeneted..."></textarea>
+                <button class="contact-button" type="submit">Beküldés</button>
             </form>
         </section>
         <div class="szemelyes">
