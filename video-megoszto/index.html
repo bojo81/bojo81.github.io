@@ -47,9 +47,10 @@
        </div>
     </header>
     <main>
-        <div class="row first-row">
+        <div class="row first-row" id="js-films">
             <h2>My List</h2>
             <div class="films">
+                <img class="forward" id="js-forward" src="./assets/icons/forward.svg" alt="forward-icon">
                 <img src="./assets/images/night.jpg" alt="film-poster">
                 <img src="./assets/images/night.jpg" alt="film-poster">
                 <img src="./assets/images/night.jpg" alt="film-poster">
@@ -66,7 +67,25 @@
             <h2>Continue Watching for ...</h2>
             <div class="films">
                 <img src="./assets/images/night.jpg" alt="film-poster">
-                <img src="./assets/images/night.jpg" alt="film-poster">
+
+                <div class="sample">
+                  <img src="./assets/images/night.jpg" alt="film-poster">
+                  <div class="preview">
+                    <video class="main-video" autoplay loop muted>
+                        <source src="./assets/videos/video.mp4" type="video/mp4" />
+                    </video> 
+                    <div class="icons">
+                        <img src="./assets/icons/play.svg" alt="">
+                        <img src="./assets/icons/account_circle_white.svg" alt="">
+                        <img src="./assets/icons/info.svg" alt="">
+                        <img src="./assets/icons/search.svg" alt="">
+                        <img src="./assets/icons/notifications_white.svg" alt="">
+                    </div>
+                    <h2>Title</h2>
+                    <p class="genre">Genre</p>
+                  </div>
+                </div>
+                
                 <img src="./assets/images/night.jpg" alt="film-poster">
                 <img src="./assets/images/night.jpg" alt="film-poster">
                 <img src="./assets/images/night.jpg" alt="film-poster">
@@ -132,5 +151,12 @@
             <p>Laudantium, distinctio!</p>
         </div>
     </footer>
+
+    <script>
+        const arrow = document.getElementById("js-forward");
+        arrow.onclick = function () {
+            document.getElementById("js-films").scrollLeft += 800;
+        };
+    </script>
 </body>
 </html>
