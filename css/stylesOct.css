@@ -18,27 +18,26 @@ body {
 /* Header stílus */ 
 
 .header-container {
+    max-height: 200px;
     background-color: rgb(25, 22, 22);
     display: flex;
 }
 
 .header-nav-container {
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    align-items: end;
     margin: 2rem 1.5rem;
 }
 
 .header-h1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 }
 
-.header-menu {
+.header-menu-ul {
     display: flex;
     list-style-type: none;
-    align-items: flex-end;
 }
 
 h1 {
@@ -55,7 +54,7 @@ a {
     align-items: center;
     border-radius: 4rem;
     margin: 20px;
-    
+    height: 6rem;
 }
 
 .octopus:hover {
