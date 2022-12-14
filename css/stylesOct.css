@@ -1,6 +1,6 @@
 /* Reset */
 html {
-    box-sizing: border-box;
+   
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --backgound-primary: whitesmoke;
 }
@@ -9,16 +9,22 @@ html {
     margin : 0;
     padding: 0;
     font-size: 20px;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--backgound-primary);
 }
+ 
+
+img {
+    vertical-align: middle; 
+    width: 100%;
+}
 /* Header stílus */ 
 
 .header-container {
-    max-height: 200px;
+    height: 150px;
     background-color: rgb(25, 22, 22);
     display: flex;
 }
@@ -54,7 +60,7 @@ a {
     align-items: center;
     border-radius: 4rem;
     margin: 20px;
-    height: 6rem;
+    width: 4rem;
 }
 
 .octopus:hover {
@@ -86,186 +92,49 @@ h2 {
 /* Carusel */
 
 .carousel {
-    height: 500px;  
+    max-width: 1000px;
+    position: relative;
+    margin: auto;  
 }
 
 .carousel-kep {
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-}
-
-.frontend-kep {
-    background-image: url(/Images/frontend.logo.jfif);
-}
-
-.backend-kep {
-    background-image: url(/Images/backend.jpg);
+    display: none;
+  
 }
 
 .carousel-title {
-    color: rgb(56, 22, 22);
-    font-size: 2.2rem;
-    padding-top: 18rem;
+    position: absolute;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8%;
+    width: 100%;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
 }
 
-.title-2 {
-    color:rgb(151, 108, 108);
-    padding-bottom: 1rem;
-}
-
-.it-kep {
-    background-image: url(/Images/it.jfif);
-}
-
-
-/* Szolgáltatások */
-.szolgaltatas {
-    margin-top: 1000px;
-}   
-
-.frontend {
-    display: flex;
-    margin: 3rem;
-    justify-content: space-evenly;
-}
-
-.front-card {
-    height: 7rem;
-    margin: 3rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.front-card:hover {
-    box-shadow: 4px 4px 5px black;
-    border-radius: 25px;
-}
-
-.backend {
-    display: flex;
-    margin: 3rem;
-    justify-content: space-evenly;
-}
-
-.back-card {
-    height: 7rem;
-    margin: 3rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.back-card:hover {
-    box-shadow: 4px 4px 5px black;
-    border-radius: 25px;
-}
-
-
-.it {
-    display: flex;
-    margin: 3rem;
-    justify-content: space-evenly;
-}
-
-.it-card {
-    height: 7rem;
-    margin: 3rem;
-}
-
-.it-card:hover {
-    box-shadow: 4px 4px 5px black;
-    border-radius: 25px;
-}
-
-
-/* Contact */
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    margin: 2rem;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    margin: 2rem;
-}
-
-.contact-textarea {
-    margin: 2rem;
-    width: 16rem;
-}
-
-.contact-button {
-    width: 6rem;
-    box-shadow: 2px 2px 4px black;
-    text-shadow: 1px 1px 1px black;
-    border: none;
-    cursor: pointer;
-    margin: auto;
-}
-
-.contact-button:hover {
-    width: 6.2rem;
-    box-shadow: 4px 4px 5px black;
-}
-
-/* Footer */
-
-.footer {
-    border-top: 0.2rem black solid;
-    padding-top: 1rem;
-}
-
-.footer-links {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-.footer-link{
-    margin: 2rem;
-    font-size: 14px;
-    text-decoration: none;
-    color: black;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 1rem;
-}
-
-.icon {
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    margin: 1rem;
-    background-position: center center;
+    transition: background-color 0.6s ease;
 }
 
-.facebook-icon {
-    background-image: url(/Images/facebook-brands.svg) ;
+.active {
+    background-color: #717171;
 }
 
-.instagram-icon {
-    background-image: url(/Images/instagram-brands.svg);
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-.footer__copy {
-    display: block;
-    margin: 1rem;
-    text-align: center;
+@keyframes fade {
+    from {opacity: .4}
+    to{opacity: 1}
 }
 
 
 
 
-/* Medi

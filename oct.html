@@ -7,6 +7,7 @@
     <title>OctopusIT</title>
     <link rel="shortcut icon" href="Images/Octopus.png" type="image/x-icon">
     <link rel="stylesheet" href="css/stylesOct.css">
+    <script src="./oct.js"></script>
 </head>
 <body>
     <header class="header-container">  
@@ -26,79 +27,43 @@
             </div> 
          </nav>
     </header>
-    <main>
+    <main class="main">
         <h2 class="main-h2">Szolgáltatásaink</h2>
-            <section class="carousel">
-                <div class="carousel-kep frontend-kep">
-                    <h3 class="carousel-title">Frontend webfejlesztés, igényes-letisztult weboldalak</h3>
-                </div>
-                <div class="carousel-kep backend-kep">
-                    <h3 class="carousel-title title-2">Szerver oldali programozás, jól működő rendszer</h3>
-                </div>
-                <div class="carousel-kep it-kep">
-                    <h3 class="carousel-title" >Szerver üzemeltetés, egyéb IT szolgáltatás</h3>
-                </div>
-             </section>
-             <section class="szolgaltatas">
-                <h2 id="frontend">Frontend webfejlesztés</h2>
-                <div class="frontend" >
-                    <img class="front-card" src="./Images/HTML.logo.png" width="300" alt="html_logo">
-                    <img class="front-card" src="./Images/css.logo.jpg" width="150" alt="css_logo">
-                    <img class="front-card" src="./Images/JS.logo.png" alt="js_logo">
-                </div>
-                <h2 id="backend">Szerver oldali programozás</h2>
-                <div class="backend" >
-                    <img class="back-card" src="./Images/python.logo.png" width="200" alt="python_logo">
-                    <img class="back-card" src="./Images/java.logo.png" alt="java_logo">
-                    <img class="back-card" src="./Images/php.logo.png" alt="php_logo">
-                    <img class="back-card" src="./Images/sql.logo.png" alt="sql_logo">
-                </div>
-                <h2 id="it">IT</h2>
-                <div class="it" >
-                    <h3>Számítógép hálózat építés</h3>
-                    <img class="it-card" src="./Images/halozatok-logo.jpg" alt="halozat_logo">
-                    <h3>Szerver üzemeltetés</h3>
-                    <img class="it-card" src="./Images/server.logo.jpg" alt="server_logo">
-                    <h3>Számítógép karbantartás, javítás</h3>
-                    <img class="it-card" src="./Images/szerviz.logo.jpg" alt="szerviz_logo">
-                </div> 
-           </section>    
-        <section class="contact" id="contact">
-            <h3>Írjon nekünk...</h3>
-            <form class="contact-form" action="https://formspree.io/f/mdobegrj" method="post" >
-                <label for="knev_id">Keresztnév: </label>
-                <input type="text" name="k_nev" placeholder="Gipsz" id="knev_id">
-                <label for="vnev_id">Vezetéknév: </label>
-                <input type="text" name="v_nev" placeholder="Jakab" id="vnev_id">
-                <label for="tel_id">Telefonszám: </label>
-                <input type="tel" name="tel" id="tel_id" placeholder="06-70-1234567" pattern="[0-9]{2}-[0-9]{2}-[0-9]{7}">
-                <label for="email_id">Email: </label>
-                <input type="email" name="email" placeholder="@" id="email_id">
-                <textarea class="contact-textarea" name="uzenet" id="" cols="30" rows="10" placeholder="Ide írd be az üzeneted..."></textarea>
-                <button class="contact-button" type="submit">Beküldés</button>
-            </form>
-        </section>
-        <div class="szemelyes">
-            <h3>És aki mindezért felel...</h3>
-            <a target="_blank" href="index.html">Borbás József</a>
-            <br>
-            <label for="kapcsolat" id="kapcsolat">Tel: 70/5807207</label>
-            <br>
-            <label for="kapcsolat" >Email:borbas.kft@gmail.com</label>
-        </div>
+        <section class="carousel">
+            <div class="carousel-kep fade">
+                <img src="./Images/frontend.logo.jfif" alt="Frontend kép">
+                <div class="carousel-title">Frontend webfejlesztés, igényes-letisztult weboldalak</div>
+            </div>
+            <div class="carousel-kep fade">
+                <img src="./Images/backend.jpg" alt="Backend kép">
+                <div class="carousel-title">Szerver oldali programozás, jól működő rendszer</div>
+            </div>
+            <div class="carousel-kep fade">
+                <img src="./Images/it.jfif" alt="IT kép">
+                <div class="carousel-title" >Szerver üzemeltetés, egyéb IT szolgáltatás</div>
+            </div>
+        </section>   
     </main>
     <footer class="footer">
-        <nav>
-            <ul class="footer-links">
-                <li><a href="#" class="footer-link">Adatvédelem</a></li>
-                <li><a href="#" class="footer-link">Kapcsolat</a></li>
-            </ul>
-            <ul class="footer-social">
-                <li><a href="#"><span class="icon facebook-icon"></span></a></li>
-                <li><a href="#"><span class="icon instagram-icon"></span></a></li>
-            </ul>
-        </nav>
-     <p class="footer__copy">  &copy; B&B KFT  "Ha problémája van, mondja el nekünk, ha meg van elégedve mondja el <strong>MINDENKINEK!</strong>"</p>
+        
     </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("carousel-kep");
+                    for (i = 0;i < slides.length;i++) {
+                        slides[i].style.display = "none";
+                    }
+                slideIndex++;
+                    if ( slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides(), 2000);
+            }
+    </script>
 </body>
 </html>
